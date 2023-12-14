@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <!-- navbar -->
+      <section class="w-100 position-absolute z-1 top-0 ">
+        <div class="mx-auto py-3">
+          <nav class="navbar navbar-expand-lg shadow-0">
+            <div class="container px-0 py-3">
+              <a class="navbar-brand text-white" href="#">soudemy</a>
+              <button
+                data-mdb-collapse-init
+                class="navbar-toggler"
+                type="button"
+                data-mdb-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 ps-5">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-white"
+                      aria-current="page"
+                      href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white">Blog</a>
+                  </li>
+                </ul>
+                <div class="d-flex gap-5">
+                  <img src="./assets/search-normal.png" alt="" />
+                  <img src="./assets/bag-2.svg" alt="" />
+                  <img src="./assets/menu.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <!-- Home -->
+      <section>
+        <div class="position-relative">
+          <!-- carosel -->
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/Rectangle 4.png"
+                  class="d-block img-fluid w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/Rectangle 4.png"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/Rectangle 4.png"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev carousel-left-button"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next carousel-right-button"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- text over -->
+          <div
+            class="home d-flex justify-content-center align-items-center flex-column position-absolute w-100 h-100  top-0"
+          >
+            <h2>All for your home</h2>
+            <div class="">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+              dolor odio odio malesuada at condimentum <br />
+              adipiscing iaculis semper.
+            </div>
+            <button
+              class="button btn-outline-light mt-2 mt-md-5 py-md-4 py-2 px-md-5 px-3"
+            >
+              View more
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section>
+        <div class="product container-fluid mt-3 py-5 mx-auto row">
+          <h1 class="line1">Products of the week</h1>
+          <p class="line2 col-md-6 mx-auto mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
+            dolor odio odio malesuada at condimentum adipiscing iaculis semper.
+          </p>
+          <div class="d-flex justify-content-center pt-5 row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 shadow-0 p-3">
+                <img src="./assets/Rectangle 6.png" alt="" class="img-fluid" />
+                <h2 class="text-center">pot</h2>
+                <p class="text-center">$ 223,00</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 shadow-0 p-3">
+                <img src="./assets/Rectangle 7.png" alt="" class="img-fluid" />
+                <h2 class="text-center">pot</h2>
+                <p class="text-center">$ 223,00</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 shadow-0 p-3">
+                <img src="./assets/Rectangle 5.png" alt="" class="img-fluid" />
+                <h2>pot</h2>
+                <p>$ 223,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- bulb -->
+      <section class="">
+        <div class="position-relative w-100">
+          <img src="./assets/Rectangle 8.png" alt="" class="w-100" />
+          <div
+            class="col-8 col-md-6 col-xxl-5 pt-2 pt-sm-3 pe-4 pt-md-5 pt-lg-5 pt-xl-5 pe-md-3 pe-lg-5 h-100 position-absolute bulb top-0 end-0 text-center"
+          >
+            <div class="bulb-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
+              dolor odio odio malesuada at condimentum adipiscing iaculis
+              semper.
+            </div>
+            <button
+              class="button  mt-1 mt-sm-3 mt-md-4 mt-lg-3 py-0 py-md-2 py-xl-4 py-lg-3 px-4 px-lg-5"
+            >
+              View more
+            </button>
+          </div>
+        </div>
+        <div class="position-relative">
+          <img src="./assets/Rectangle 10.png" alt="" class="w-100" />
+          <!-- playbutton -->
+
+          <div class="play-btn   m-auto d-flex justify-content-center align-items-center position-absolute top-50 start-50">
+            <img src="./assets/play.svg" alt="" class="">
+          </div>
+        </div>
+      </section>
+
+      <!-- stylish chairs -->
+      <section>
+        <div class="container my-5 py-5">
+          <div class="row pt-5">
+            <!-- left -->
+            <div
+              class="col-md-6 d-flex justify-content-center align-items-center flex-column my-5"
+            >
+              <h1 class="line1">stylish chairs</h1>
+              <p class="line2 mx-auto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Consequat dolor odio odio malesuada at condimentum adipiscing
+                iaculis semper.
+              </p>
+              <button class="button2  mt-3 py-4 px-5">
+                View more
+              </button>
+            </div>
+
+            <!-- right -->
+            <div class="col-md-6 my-3">
+              <img
+                src="./assets/Rectangle 11.png"
+                alt=""
+                class="m-auto img-fluid"
+              />
+            </div>
+          </div>
+
+          <!-- row2 -->
+          <div class="row py-5 my-5">
+            <!-- left -->
+            <div class="col-md-6 my-3">
+              <img src="./assets/Rectangle 13.png" alt="" class="img-fluid" />
+            </div>
+            <!-- right -->
+            <div
+              class="col-md-6 my-3 d-flex justify-content-center align-items-center flex-column"
+            >
+              <h1 class="line1">Table</h1>
+              <p class="line2 mx-auto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Consequat dolor odio odio malesuada at condimentum adipiscing
+                iaculis semper.
+              </p>
+              <button class="button2  mt-3 py-4 px-5">
+                View more
+              </button>
+            </div>
+          </div>
+          <!-- row 3 -->
+          <div class="row">
+            <!-- left -->
+            <div
+              class="col-md-6 my-3 d-flex justify-content-center align-items-center flex-column"
+            >
+              <h1 class="line1">contemporary lamps</h1>
+              <p class="line2 mx-auto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Consequat dolor odio odio malesuada at condimentum adipiscing
+                iaculis semper.
+              </p>
+              <button class="button2  mt-3 py-4 px-5">
+                View more
+              </button>
+            </div>
+
+            <!-- right -->
+            <div class="col-md-6 my-3">
+              <img
+                src="./assets/Rectangle 15.png"
+                alt=""
+                class="m-auto img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- order now -->
+      <section class="order-now py-5 my-5">
+        <div class="order-now-div py-5 row mx-0 align-items-center">
+          <div class="col-8  text-end">
+            order now for an <span>express delivery in 24h !</span>
+          </div>
+          <div class="col-md-3 col-xl-4 ms-0 text-start ">
+            <button
+              class="button2  py-2 py-md-4 px-3 px-md-5 ms-auto"
+            >
+              View more
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- cards -->
+      <section class="py-5">
+        <div class="container py-5 my-5">
+          <div class="row pt-4">
+            <!-- card1 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card-box card border-0 shadow-0">
+                <div
+                  class="card-head d-flex align-items-center justify-content-start gap-3"
+                >
+                  <img src="./assets/clock.svg" alt="" />
+                  <p class="card-title pt-2">Shope online</p>
+                </div>
+                <div class="card-body ps-1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Consequat dolor odio odio
+                </div>
+              </div>
+            </div>
+            <!-- card2 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card-box card border-0 shadow-0">
+                <div
+                  class="card-head d-flex align-items-center justify-content-start gap-3"
+                >
+                  <img src="./assets/bag-2.png" alt="" />
+                  <p class="card-title pt-2">Free shipping</p>
+                </div>
+                <div class="card-body ps-1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Consequat dolor odio odio
+                </div>
+              </div>
+            </div>
+            <!-- card3 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card-box card border-0 shadow-0">
+                <div
+                  class="card-head d-flex align-items-center justify-content-start gap-3"
+                >
+                  <img src="./assets/card.svg" alt="" />
+                  <p class="card-title pt-2">Return policy</p>
+                </div>
+                <div class="card-body ps-1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Consequat dolor odio odio
+                </div>
+              </div>
+            </div>
+            <!-- card4 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="card-box card border-0 shadow-0">
+                <div
+                  class=" d-flex align-items-center justify-content-start gap-3"
+                >
+                  <img src="./assets/dollar-circle.svg" alt="" />
+                  <p class="card-title pt-2">PAYMENT</p>
+                </div>
+                <div class="card-body ps-1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Consequat dolor odio odio
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Office -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 text-center office my-3 mx-auto">
+              <img src="./assets/Rectangle 20.png" alt="" class="img-fluid" />
+              <div class="col-8 mx-auto">
+                <p class="office-p">29 sep,2022 / by soroush norozy</p>
+                <h3 class="office-h3">
+                  Your office should have only natural materials
+                </h3>
+                <div class="office-div">read more</div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center office my-3 mx-auto">
+              <img src="./assets/Rectangle 19.png" alt="" class="img-fluid" />
+              <div class="col-8 mx-auto">
+                <p class="office-p">29 sep,2022 / by soroush norozy</p>
+                <h3 class="office-h3">
+                  Your office should have only natural materials
+                </h3>
+                <div class="office-div">read more</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- carousel -->
+      <section>
+        <div id="carouselExample123" class="carousel slide py-5 mt-5">
+          <div class="container">
+            <div class="carousel-inner text-center row">
+              <div class="carousel-item active">
+                <img src="./assets/“.png" alt="" />
+                <p class="col-md-6 col-lg-4 mx-auto my-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tellus vitae congue id ipsum sed neque et dui accumsan. Nibh
+                  semper magna facilisi ridiculus luctus amet. Aliquam
+                </p>
+                <h3>Soroush norozy</h3>
+                <div class="pb-4">Designer</div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/“.png" alt="" />
+                <p class="col-4 mx-auto my-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tellus vitae congue id ipsum sed neque et dui accumsan. Nibh
+                  semper magna facilisi ridiculus luctus amet. Aliquam
+                </p>
+                <h3>Soroush norozy</h3>
+                <div>Designer</div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/“.png" alt="" />
+                <p class="col-4 mx-auto my-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tellus vitae congue id ipsum sed neque et dui accumsan. Nibh
+                  semper magna facilisi ridiculus luctus amet. Aliquam
+                </p>
+                <h3>Soroush norozy</h3>
+                <div>Designer</div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample123"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample123"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <section class="foot">
+        <footer class="text-lg-start">
+          <!-- Grid container -->
+          <div class="container py-5">
+            <!--Grid row-->
+            <div class="f-logo">Soudemy</div>
+            <div class="row mt-5">
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-3 col-xl-4 pe-4 mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4 f-line1">About us</h6>
+                <p class="f-body col-8">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tellus vitae congue id ipsum sed neque et dui accumsan. Nibh
+                  semper magna facilisi ridiculus luctus amet. Aliquam
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!--Grid column-->
+              <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4 f-line1">Useful</h6>
+
+                <ul class="list-unstyled f-body">
+                  <p>Download product</p>
+                  <p>Download product</p>
+                  <p>Download product</p>
+                  <p>Download product</p>
+                  <p>Download product</p>
+                  <p>Download product</p>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4 f-line1">Download</h6>
+
+                <ul class="list-unstyled f-body">
+                  <p>instgram</p>
+                  <p>facebook</p>
+                  <p>Twitter</p>
+                  <p>printeress</p>
+                  <p>youtube</p>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4 f-line1">Call center</h6>
+                <p class="f-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tellus vitae
+                </p>
+                <p class="f-body">soroushnorozyui@gmail.com</p>
+                <p class="f-body">+1 333 555</p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column-->
+              <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Links</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="text-body">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-body">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-body">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-body">Link 4</a>
+                  </li>
+                </ul>
+              </div> -->
+              <!--Grid column -->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+        </footer>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
